@@ -8,7 +8,7 @@ tahun = np.arange(2011, 2023)
 for th in tahun: 
 
   # Mengirimkan permintaan GET ke URL yang ditentukan
-  url = "https://djpk.kemenkeu.go.id/portal/data/apbd?tahun=2021&provinsi=11&pemda=21".format(th)
+  url = "https://djpk.kemenkeu.go.id/portal/data/apbd?tahun={}&provinsi=11&pemda=21".format(th)
   response = requests.get(url)
 
   # Menggunakan BeautifulSoup untuk memproses HTML dan menyimpannya dalam variabel soup
